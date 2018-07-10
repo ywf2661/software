@@ -4,7 +4,7 @@ import { Scene, Router, Actions, Stack, Tabs, ActionConst } from 'react-native-r
 
 import MainScene from './components/scene/MainScene';
 import loginscene from './components/scene/LoginScene';
-import SNSNaver from './components/scene/SNSNaver';
+import Scan from './components/scene/Scan';
 import Record from './components/scene/record';
 
 
@@ -27,14 +27,16 @@ const RouterComponent = () => {
           component={MainScene}
           navBar={Navbar}
         />
+
         <Scene
           key="Record"
           component={Record}
           navBar={Navbar}
         />
+
         <Scene
-          key="Naverblog"
-          component={SNSNaver}
+          key="Scan"
+          component={Scan}
           navBar={Navbar}
         />
 
